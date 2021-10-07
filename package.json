@@ -1,0 +1,38 @@
+{
+  "name": "vili-server-prisma-ts",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "prisma": {
+    "seed": "ts-node ./src/seed.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only --no-notify src/index.ts",
+    "studio": "npx prisma studio",
+    "build": "tsc"
+  },
+  "author": "Muhammad Tsany Qudsi",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^3.1.1",
+    "apollo-server": "^3.3.0",
+    "graphql": "^15.6.0",
+    "graphql-middleware": "^6.1.7",
+    "nexus": "^1.1.0",
+    "nexus-prisma": "^0.34.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.0",
+    "prisma": "^3.1.1",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
